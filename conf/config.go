@@ -27,6 +27,7 @@ type EtcdConf struct {
 
 type ESConf struct {
 	Address string `ini:"address"`
+	ChanSize int `ini:"chan_size"`
 }
 
 func InitConf(path string) (*AppConf) {
